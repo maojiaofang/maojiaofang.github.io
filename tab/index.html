@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.wrap{
+				margin: 0 auto;
+				overflow: hidden;
+				width: 350px;
+				height: 380px;
+			}
+			.wrap .tab{
+				border-bottom: 4px solid #d1e8b8;
+				display: block;
+				padding: 8px;
+				width: 80px;
+				border-radius: 1em 4em 1em 4em;
+				text-align: center;
+				margin: 1px;
+				background: #4b7975;
+				text-decoration: none;
+				color: #fff;
+				float: left;
+				font-size: 14px;
+			}
+			.wrap .tab.active{
+				background: #8b8b4;
+				border-bottom: 4px solid #FF0000;
+			}
+			.content{
+				background: #919b9d;
+				text-align: justify;
+				overflow: hidden;
+				color: #fff;
+				padding: 20px;
+				border-radius: 1em 4em 1em 4em;
+				height: 200px;
+				width: 272px;
+			}
+			.content .content1{
+				font-size: 14px;
+				display: none;
+			}
+			.content .content1 em{
+				font-size: 18px;
+			}
+			.content .content1.active{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<a href="#" class="tab active">Tab1</a>
+			<a href="#" class="tab">Tab2</a>
+			<a href="#" class="tab">Tab3</a>
+			<div class="content">
+				<div class="content1 active">
+					<em>99</em>
+					Points is a place where you can find many useful tutorials over jQuery, PHP, Ajax, Codeigniter and CSS. Its all about PHP web development. This blog is popular for its Facebook style , Youtube style and many other popular tutorialse. Get latest tutorial's source code free and use them to put some stylish effect to your web pages. 
+					 <br />
+					 <br />
+					  Thanks!
+				</div>
+				<div class="content1">
+					<em>L</em>
+					orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+				</div>
+			    <div class="content1">
+					<em>T</em>
+					here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. 
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+		<script>
+			$(".wrap a").click(function(){
+				// console.log($(this).index());
+				$(".wrap a").removeClass("active");
+				$(this).addClass("active");
+				$(".content .content1").removeClass("active");
+				$(".content .content1").eq($(this).index()).addClass("active");
+			})
+		</script>
+	</body>
+</html>

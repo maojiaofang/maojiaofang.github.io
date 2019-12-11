@@ -1,0 +1,43 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,li,ol,dl,dt,dd,a,i,em,b,strong,img,input{
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+	word-break: break-all;
+}
+.clearfix{
+	zoom: 1;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	vertical-align: middle;
+	height: 0;
+	clear: both;
+}
+ul,ol{
+	list-style: none;
+}
+img{
+	vertical-align: middle;
+}
+.wrap{
+	width: 1200px;
+	margin: 0 auto;
+	border-top: 3px solid #d9232e;
+}
+input[type=button]{
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+input{
+	outline: 0;
+}
+.nav{
+	position: relative;
+}
+.banner img{
+	width: 100%;
+	display: block;
+}

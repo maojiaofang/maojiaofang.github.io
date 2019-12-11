@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="./css/shouye.css">
+  </head>
+  <body>
+    <div class="bigbox">
+      <!-- 头部 -->
+      <div class="header-top">
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <p>MORE THAN 10 NEW DESIGNS FOR YOUR HOME</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <div class="right-info">
+              <ul>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign up</a></li>
+              </ul>
+              <div class="header-info">
+                <ul>
+                  <li><a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a></li>
+                  <li><a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a></li>
+                  <li><a href="#">
+                    <i class="fa fa-google-plus"></i>
+                  </a></li>
+
+                </ul>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container">
+          <div class="logo">
+            <a href="#">
+              <img src="./images/logo.jpg" alt="">
+            </a>
+          </div>
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <!-- <a class="navbar-brand logo" href="#"><img src="./images/logo.jpg" alt=""></a> -->
+              </div>
+          
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Codes</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Gallery1</a></li>
+                      <li><a href="#">Gallery2</a></li>
+                      <li><a href="#">Font Icons</a></li>
+                     
+                    </ul>
+                  </li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+               
+              
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+        </div>
+      </div>
+   </div>
+  <!-- banner -->
+  <div class="banner">
+   
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+  
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="./images/2.jpg" alt="...">
+        
+        <div class="carousel-caption">
+          
+          <h3>Elegant Interior Designs </h3>
+          <p>Curabitur eget metus eget erat vehicula semper vitae sed leo</p>
+          <div class="aniv">
+            <a href="#">Click Here</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./images/bj4.jpg" alt="...">
+        <div class="carousel-caption">
+         <h3>Beautiful Interior Designs </h3>
+         <p>Quisque nisl risus, egestas in convallis vitae, fringilla cursus magna</p>
+         <div class="aniv">
+            <a href="#">Read More	</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./images/bj1.jpg" alt="...">
+        <div class="carousel-caption">
+          <h3>Elegant Interior Design</h3>
+          <p> Suspendisse bibendum dictum metus, at finibus elit dignissim nec</p>
+          <div class="aniv">
+              <a href="#">Click Here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+  <!-- banner-bottom -->
+  <div class="banner-bottom">
+      <div class="container">
+         <div class="row">
+           <div class="bottom-left col-xs-12 col-sm-6 col-md-6 col-lg-6">
+             <div class="left-border">
+               <div class="left-border-info">
+                 <p>Make Your Life Good & Feel More</p>
+               </div>
+             </div>
+           </div>
+           <div class="bottom-right col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="left-border">
+              <div class="left-border-info">
+                <p>Make Your Life Beautiful</p>
+              </div>
+            </div>
+           </div>
+           
+         </div>
+      </div>
+  </div>
+
+  <!-- information -->
+  <div class="information">
+    <div class="container">
+      <div class="information-header">
+        <h3>Our Services</h3>
+        <p>Vivamus efficitur scelerisque nulla nec lobortis. Nullam ornare metus vel dolor feugiat maximus.Aenean nec nunc et metus volutpat dapibus ac vitae ipsum. Pellentesque sed rhoncus nibh</p>
+      </div>
+      <div class="information-bottom">
+        <div class="row">
+          
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="information-info">
+              <div class="information-grid-img">
+                <img src="./images/8.jpg" alt="">
+              </div>
+              <div class="information-grid-info">
+                <h4>Sollicitudin sit amet </h4>
+                <p>Duis dapibus lacinia libero at aliquam. Sed pulvinar, magna vitae consectetur ultricies, augue massa condimentum eros non luctus ipsum lacus interdum odio.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="information-info">
+                <div class="information-grid-info">
+                    <h4>Sollicitudin sit amet </h4>
+                    <p>Duis dapibus lacinia libero at aliquam. Sed pulvinar, magna vitae consectetur ultricies, augue massa condimentum eros non luctus ipsum lacus interdum odio.</p>
+                  </div>
+                  <div class="information-grid-img">
+                      <img src="./images/3.jpg" alt="">
+                </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="information-info">
+                <div class="information-grid-img">
+                    <img src="./images/7.jpg" alt="">
+                  </div>
+                  <div class="information-grid-info">
+                    <h4>Sollicitudin sit amet </h4>
+                    <p>Duis dapibus lacinia libero at aliquam. Sed pulvinar, magna vitae consectetur ultricies, augue massa condimentum eros non luctus ipsum lacus interdum odio.</p>
+                </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- popular -->
+  <div class="popular">
+      <div class="container">
+        <div class="popular-header">
+          <h3>Latest Designs</h3>
+          <p>Vivamus efficitur scelerisque nulla nec lobortis. Nullam ornare metus vel dolor feugiat maximus.Aenean nec nunc et metus volutpat dapibus ac vitae ipsum. Pellentesque sed rhoncus nibh</p>
+        </div>
+        <div class="popular-slide">
+            <div id="carousel-example-genericA" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-genericA" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-genericA" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-genericA" data-slide-to="2"></li>
+                </ol>
+              
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="./images/12.jpg" alt="...">
+                    <div class="carousel-caption">
+                      <h4>Office</h4>
+                      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas volutpat lacus at enim aliquet, quis iaculis nisi bibendum. Nullam cursus arcu lobortis, pharetra augue et, dignissim nunc. Morbi vestibulum tempus orci at faucibus. Sed ultricies dignissim magna tristique interdum</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="./images/10.jpg" alt="...">
+                    <div class="carousel-caption">
+                      <h4>Bed Room</h4>
+                      <p>Habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas volutpat lacus at enim aliquet, quis iaculis nisi bibendum. Nullam cursus arcu lobortis, pharetra augue et, dignissim nunc. Morbi vestibulum tempus orci at faucibus. Sed ultricies dignissim magna tristique interdum Pellentesque</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                      <img src="./images/11.jpg" alt="...">
+                      <div class="carousel-caption">
+                        <h4>Kitchen</h4>
+                        <p>Tristique senectus pellentesque habitant morbi et netus et malesuada fames ac turpis egestas. Maecenas volutpat lacus at enim aliquet, quis iaculis nisi bibendum. Nullam cursus arcu lobortis, pharetra augue et, dignissim nunc. Morbi vestibulum tempus orci at faucibus. dignissim magna tristique interdum Sed ultricies</p>
+                      </div>
+                  </div>
+                
+                </div>
+              
+                <!-- Controls -->
+                <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a> -->
+              </div>
+        </div>
+        <div class="popular-grid">
+          <div class="row">
+            
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+              <h5>Nullam convallis sagittis</h5>
+              <p>Donec malesuada ultricies metus ac vehicula. Nullam convallis sagittis tellus ut dictum. Proin risus lacus, sollicitudin sit amet ante ac, dapibus convallis ipsum.</p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+              <h5>Proin risus lacus</h5>
+              <p>Donec malesuada ultricies metus ac vehicula. Nullam convallis sagittis tellus ut dictum. Proin risus lacus, sollicitudin sit amet ante ac, dapibus convallis ipsum.</p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+              <h5>Sollicitudin sit amet ante</h5>
+              <p>Donec malesuada ultricies metus ac vehicula. Nullam convallis sagittis tellus ut dictum. Proin risus lacus, sollicitudin sit amet ante ac, dapibus convallis ipsum.</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- footer  -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <h4>Navigation</h4>
+          <ul>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Gallery</a>
+            </li>
+            <li>
+              <a href="">Blog</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <h4>Newsletter</h4>
+          <p>Nunc non feugiat quam, vitae placerat ipsum. Cras at felis congue, volutpat neque eget</p>
+          <form action="#" method="POST">
+            <input type="email" name="email" placeholder="Enter your email here" required>
+            <input type="submit" value="Subscribe">
+          </form>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <h4>Latest News</h4>
+          <div class="news-grids">
+            <h6>
+                09/01/2016 : 
+                <a href="#">Cras at felis congue</a>
+            </h6>
+            <h6>
+                13/07/2016 :  
+                <a href="#">Volutpat neque eget</a>
+            </h6>
+            <h6>
+                13/02/2016 :  
+                <a href="#">Agittis tellus ut dictum</a>
+            </h6>
+            <h6>
+                28/11/2016 : 
+                <a href="#">Cras at felis congue</a>
+            </h6>
+            <h6>
+                19/01/2016 : 
+                <a href="#">pellentesque habitant morbi</a>
+            </h6>
+            <h6>
+                23/02/2016 :  
+                <a href="#">Maecenas volutpat lacus</a>
+            </h6>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

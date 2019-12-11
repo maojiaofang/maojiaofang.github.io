@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style>
+			body {
+				background-color: black;
+
+			}
+
+			.bigbox {
+				width: 400px;
+				height: 200px;
+				/* float: left; */
+				/* border: 1px solid lightblue; */
+				position: relative;
+				margin: 0 auto;
+			}
+
+			.bigbox .bettery {
+				height: 10px;
+				width: 400px;
+				top: 50%;
+				background: #111;
+				border: 1px solid #111;
+				border-radius: 3px;
+				position: absolute;
+				transition: all 0.5s;
+				animation: dhxg 5s linear infinite;
+			}
+
+			@keyframes dhxg {
+				0% {
+					box-shadow: inset 0px 0px red;
+					background-position: top;
+				}
+
+				20% {
+					box-shadow: inset 40px 0px orange;
+				}
+
+				100% {
+					box-shadow: inset 500px 0px lawngreen;
+				}
+			}
+
+			.span {
+
+				width: 200px;
+				margin: 90px auto;
+				background-color: rgba(0, 0, 0, 0.02);
+				/* height: 400px; */
+				vertical-align: middle;
+				border-radius: 1px;
+			}
+
+			.battery {
+				width: 100px;
+				height: 50px;
+
+				border: 1px #fff solid;
+				border-radius: 2px;
+				position: relative;
+				transition: all 0.5s;
+				animation: charge 5s linear infinite;
+			}
+
+			.battery::after {
+				width: 20px;
+				height: 30px;
+				background-color: #fff;
+				border-radius: 0 1px 1px 0;
+				position: absolute;
+				content: "";
+				top: 8px;
+				right: -20px;
+			}
+
+			@keyframes charge {
+				0% {
+					box-shadow: inset 0px 0px red;
+					/* box-shadow:inset offset-x offset-y blur-radius spread-radius color,....; */
+				}
+
+				10% {
+					box-shadow: inset 20px 0px lightgreen;
+				}
+
+				100% {
+					box-shadow: inset 100px 0px lightgreen;
+				}
+			}
+
+			.box {
+				width: 100px;
+				height: 100px;
+				position: relative;
+				margin: 30px auto;
+				cursor: pointer;
+				background: lawngreen;
+			}
+
+			.box span {
+				display: block;
+				transform: scaleX(0);
+				height: 5px;
+				position: absolute;
+				background-color: orchid;
+				width: 100%;
+
+			}
+
+			.box span.top {
+				top: 0;
+				left: 0;
+				transform-origin: right center;
+				transition: all 0.3s;
+			}
+
+			.box:hover span.top {
+				transform: scaleX(1);
+
+				transform-origin: left center;
+
+			}
+
+			.box span.left {
+				bottom: 0;
+				left: 0;
+				transform: scaleY(0);
+				width: 5px;
+				transform-origin: top center;
+				transition: all 0.3s;
+			}
+
+			.box:hover span.left {
+				transform: scaleY(1);
+				height: 100%;
+				transform-origin: bottom center;
+
+			}
+
+			.box span.bottom {
+				bottom: 0;
+				right: 0;
+				width: 0;
+				transform-origin: left center;
+				transition: all 0.3s;
+			}
+
+			.box:hover span.bottom {
+				transform: scaleX(1);
+				width: 100%;
+				transform-origin: right center;
+				transition: all 0.3s;
+			}
+
+			.box span.right {
+				top: 0;
+				right: 0;
+				transform: scaleY(0);
+				width: 5px;
+				transform-origin: bottom center;
+				transition: all 0.3s;
+
+			}
+
+			.box:hover span.right {
+				transform: scaleY(1);
+				height: 100%;
+				transform-origin: top center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bigbox">vvv
+			<div class="bettery"></div>
+		</div>
+
+		<div class="span">
+			<div class="battery"></div>
+		</div>
+		<div class="box">
+			<span class="top"></span>
+			<span class="bottom"></span>
+			<span class="left"></span>
+			<span class="right"></span>
+		</div>
+	</body>
+</html>

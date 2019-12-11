@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <style>
+        .stage .main {
+            width: 400px;
+           
+            float: left;
+            margin-top: 40px;
+            background: lightblue;
+            position: relative;
+            /* overflow: hidden; */
+        }
+
+        .stage .main img {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .stage .main .mask {
+            width: 100px;
+            height: 100px;
+            background: rgba(0, 0, 0, 0.5);
+            /* border-radius: 50%; */
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            /* border-radius: 50%; */
+            pointer-events: none;
+            /* 鼠标穿透 */
+        }
+
+        .stage .zoom {
+            float: left;
+            margin-top: 40px;
+            margin-left: 20px;
+            width: 400px;
+            height: 400px;
+            background: url("images/waldo.jpg")no-repeat;
+            background-size: 400% auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stage">
+        <div class="main">
+            <img src="images/waldo.jpg" alt="">
+            <div class="mask"></div>
+        </div>
+        <div class="zoom"></div>
+    </div>
+    <script>
+        $(".main").mousemove(function (e) {
+            //获取鼠标当前位置  
+            var pageX = e.offsetX;
+            var pageY = e.offsetY;
+            console.log(pageX, pageY)
+
+            var x = pageX - 50;
+            var y = pageY - 50;
+
+           
+            if (x > 300) {
+                x = 300 //大盒子宽度 - 小盒子宽度
+            }
+            if (y > 151.5) {
+                y = 151.5  //大盒子高度 - 小盒子高度
+            }
+            if (x < 0) {
+                x = 0
+            }
+            if (y < 0) {
+                y = 0
+            }
+           $(".mask").css({top:y +"px"});
+           $(".mask").css({left:x +"px"});
+
+           $(".zoom").css({backgroundPositionX:x*-4+"px"});
+           $(".zoom").css({backgroundPositionY:y*-4+"px"});
+        })
+    </script>
+</body>
+
+</html>

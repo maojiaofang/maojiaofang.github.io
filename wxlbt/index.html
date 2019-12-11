@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+        <style>
+			.banner{
+				width: 100%;
+				position: relative;
+			}
+			.banner .banner1 ul{
+				list-style:  none;
+				padding-left: 0px;
+				margin-bottom: 0px;
+				
+			}
+			.banner .banner1 ul li{
+				position: absolute;
+				opacity: 0;
+			}
+			.banner .banner1 ul li.active{
+				opacity: 1;
+			}
+			.banner .banner1 ul li img{
+				width: 100%;
+				top: 0px;
+			}
+			.banner .nexImg{
+				padding: 25px 10px 25px 10x;
+				position: absolute;
+				top: 50%;
+				right: 0;
+				margin-top: 210px;
+				background: #000;
+				opacity: 0.5;
+				border-radius: 5px;
+				z-index: 10;
+			}
+			.banner .nexImg img{
+				width: 100%;
+			}
+			.banner .preImg{
+				padding: 25px 10px 25px 10x;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				margin-top: 210px;
+				background: #000;
+				opacity: 0.5;
+				border-radius: 5px;
+				z-index: 10;
+			}
+			.banner .preImg img{
+				width: 100%;
+			}
+			.banner .jumpBtn{
+				width: 100%;
+				position: absolute;
+				margin-top: 516px;
+				text-align: center;
+			}
+			.banner .jumpBtn ul{
+				margin-bottom: 0px;
+				padding: 0px;
+			}
+			.banner .jumpBtn ul li{
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				display: inline-block;
+				background-color: white;
+				opacity: 0.9;
+				margin-left: 10px;
+			}
+				.banner .jumpBtn ul li.active{
+					background-color: black;
+				}
+		</style>
+	</head>
+	<body>
+		<div class="banner">
+			<div class="banner1">
+				<ul>
+					<li class="active"><img src="images/lunbo1.jpg"></li>
+					<li><img src="images/lunbo2.jpg"></li>
+					<li><img src="images/lunbo3.jpg"></li>
+				</ul>
+			</div>
+			<div class="nexImg">
+				<img src="images/nexImg.png" alt=""/>
+			</div>
+			<div class="preImg">
+				<img src="images/preImg.png" alt="" />
+			</div>
+			<div class="jumpBtn">
+				<ul>
+					<li class="active"></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+		<script>
+			$(document).ready(function(){
+				$(".jumpBtn ul li").click(function(){
+					console.log($(this).index());
+					var _this =$(this);
+					_this.addClass("active").siblings("li").removeClass("active");
+					var int = _this.index();
+					$(".banner1 ul li").eq(int).addClass("active").siblings("li").removeClass("active");
+				})
+				var list =$(".banner1 ul li").length;
+				$(".nexImg").click(function(){
+					next(list)
+				})
+				$(".preImg").click(function(){
+					prev(list)
+				})
+				
+				
+				
+				var timer = "";
+				var num=0;
+				timer = setInterval(function(){
+					num++
+					if(num>parseFloat(list)-1){
+						num = 0;
+						$(".jumpBtn ul li").eq(num).addClass("active").siblings("li").removeClass("active");
+						$(".banner1 ul li").eq(num).addClass("active").siblings("li").removeClass("active");
+					}else{
+						$(".jumpBtn ul li").eq(num).addClass("active").siblings("li").removeClass("active");
+						$(".banner1 ul li").eq(num).addClass("active").siblings("li").removeClass("active");
+					}
+				},1000)
+			})
+			var index =0;
+			function next(list){
+				if(index<list-1){
+					index++
+					$(".jumpBtn ul li").eq(index).addClass("active").siblings("li").removeClass("active");
+					$(".banner1 ul li").eq(index).addClass("active").siblings("li").removeClass("active");
+				}else{
+					index=0;
+					$(".jumpBtn ul li").eq(index).addClass("active").siblings("li").removeClass("active");
+					$(".banner1 ul li").eq(index).addClass("active").siblings("li").removeClass("active");
+				}
+			}
+			function prev(list){
+				index--
+				if(index<0){
+					index =list-1;
+					$(".jumpBtn ul li").eq(index).addClass("active").siblings("li").removeClass("active");
+					$(".banner1 ul li").eq(index).addClass("active").siblings("li").removeClass("active");
+				}else{
+					$(".jumpBtn ul li").eq(index).addClass("active").siblings("li").removeClass("active");
+					$(".banner1 ul li").eq(index).addClass("active").siblings("li").removeClass("active");
+				}
+			}
+		</script>
+	</body>
+</html>
