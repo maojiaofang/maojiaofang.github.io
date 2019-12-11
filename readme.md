@@ -15,7 +15,8 @@
   - [响应式家居网页](https://maojiaofang.github.io/jiaju/index.html)
 - css3
 
-  - [3D盒子](https://maojiaofang.github.io/sd1/%E2%80%8Cindex.html)
+  - [3D盒子](https://maojiaofang.github.io/sd1/index.html)
+  - [3D盒子](https://maojiaofang.github.io/sd1/00.html)
 
   - [loading](https://maojiaofang.github.io/loading/loader-1.html)
   - [指示器 loading](https://maojiaofang.github.io/jd/index.html)
