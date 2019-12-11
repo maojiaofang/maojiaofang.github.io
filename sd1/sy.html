@@ -18,6 +18,7 @@
         margin: 100px auto;
         position: relative;
         transform-style: preserve-3d;
+        animation: myrotate 10s linear 0s infinite;
       }
 
       .side {
@@ -66,19 +67,12 @@
         transform: rotateY(180deg) translateZ(100px);
       }
 
-      /* input {
-				width: 100%;
-			} */
       .cube > div {
         opacity: 0.8;
       }
 
       .cube > div:hover {
         opacity: 0.3;
-      }
-
-      .cube {
-        animation: myrotate 10s linear 0s infinite;
       }
 
       @keyframes myrotate {
@@ -92,7 +86,6 @@
       }
     </style>
   </head>
-
   <body>
     <div class="cube">
       <div class="side side-top">top</div>
@@ -102,14 +95,5 @@
       <div class="side side-front">front</div>
       <div class="side side-back">back</div>
     </div>
-    <!-- <input type="range" min="-100" max="100" step="1" value="0" /> -->
   </body>
-  <!-- <script>
-        document.querySelector("input").oninput = function() {
-            console.log(this.value);
-            // var old = document.querySelector(".cube").style.transform
-            document.querySelector(".cube").style.transform =
-                "rotateY(" + (this.value * 360) / 100 + "deg) rotateX(" + (this.value * 360) / 100 + "deg)";
-        };
-    </script> -->
 </html>
