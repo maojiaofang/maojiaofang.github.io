@@ -1,0 +1,139 @@
+.loader{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    user-select: none;
+    cursor: default;
+}
+.circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+.circle:nth-child(1){
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -125px;
+    border-radius: 100%;
+    background: #db2f00;
+    z-index: 2;
+    font-size: 2.5em;
+    line-height: 2.5em;
+    color: #fff;
+    box-shadow: 0 0 25px 0 rgba(50, 50, 50, .75)
+}
+.circle:nth-child(2){
+    width: 150px;
+    height: 150px;
+    margin-top: -85px;
+    margin-left: -45px;
+    border-radius: 100%;
+    background: #f2f2ef;
+    z-index: 1;
+    font-family: uni sans;
+    font-size: 7em;
+    font-weight: 300;
+    color: #303030;
+    line-height: 1.35em;
+    animation: circle 2s infinite ease-in-out;
+
+}
+.circle:nth-child(3){
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left:75px;
+    border-radius: 100%;
+    background: #13a3a5;
+    z-index: 2;
+    font-size: 2.5em;
+    line-height: 2.5em;
+    color: #fff;
+    box-shadow: 0 0 25px 0 rgba(50, 50, 50, .75)
+
+}
+.scircle{
+    position: absolute;
+    top: -25px;
+    left: -23px;
+    width: 200px;
+    height: 200px;
+    animation: scircle 2s ease-in-out infinite;
+}
+.circle:nth-child(1) .scircle{
+    top: -12px;
+    left: -12px;
+    width: 125px;
+    height: 125px;
+}
+.circle:nth-child(1) .scircle::after{
+    top: 120px;
+    
+}
+.circle:nth-child(3) .scircle{
+    top: -12px;
+    left: -12px;
+    width: 125px;
+    height: 125px;
+}
+.circle:nth-child(3) .scircle::after{
+    top: 120px;
+    
+}
+.scircle:nth-child(2){
+    animation: scircle2 2s ease-in-out infinite;
+}
+.scircle::before{
+    content: '';
+    position: absolute;
+    width: .1em;
+    height: .1em;
+    border-radius: 50%;
+    background: #fff;
+}
+.scircle::after{
+    content: '';
+    position: absolute;
+    top: 190px;
+    width: .1em;
+    height: .1em;
+    border-radius: 50%;
+    background: #fff;
+}
+@keyframes circle{
+    0%{
+        filter: alpha(opactiy=50);
+        /* ie兼容opacity写法 */
+        opacity: .5;
+    }
+    45%,50%,55%{
+        filter: alpha(opactiy=100);
+        /* ie兼容opacity写法 */
+        opacity: 1;
+    }
+    100%{
+        filter: alpha(opactiy=50);
+        /* ie兼容opacity写法 */
+        opacity: .5;
+    }
+}
+@keyframes scircle{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes scircle2{
+    0%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(450deg);
+    }
+}

@@ -1,0 +1,77 @@
+/* 1em=16px */
+.loader{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    text-align: center;
+    cursor: default;
+    user-select: none;
+    /* user-select属性用来禁止用户用鼠标在页面上选中文字、图片等,也就是,让页面内容不可选。 */
+}
+.text{
+    position: absolute;
+    top: 1.8em;
+    left: .4em;
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    z-index: 5;
+    animation: text 3s cubic-bezier(0.075, 0.82, 0.165, 1) infinite normal;
+}
+.spinner{
+    position: relative;
+    width: 5em;
+    height: 5em;
+    color: #fff;
+}
+.spinner::before,
+.spinner::after{
+    content: "";
+    position: relative;
+    display: block;
+}
+.spinner::before{
+    width: 10em;
+    height: 10em;
+    background-color:#db2f00;
+    animation: before 3s cubic-bezier(0.075, 0.82, 0.165, 1)infinite normal;
+}
+.spinner::after{
+    position: relative;
+    bottom: -1.75em;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #322b27;
+    animation: after 3s cubic-bezier(0.075, 0.82, 0.165, 1)infinite normal;
+}
+@keyframes text{
+    0%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(.5,.5);
+    }
+    100%{
+        transform: scale(1,1);  
+    }
+}
+
+@keyframes before{
+  50%{
+      transform: scale(.5) rotate(360deg);
+      background-color: #13a3a5;
+      border-radius: 50%;
+  }
+  100%{
+    transform: scale(1) rotate(720deg);
+    background-color:#db2f00;
+  }
+}
+
+@keyframes after{
+    50%{
+      transform: scale(.5);
+      background-color: #322b27;
+    }
+}

@@ -1,0 +1,166 @@
+/* body {
+	-webkit-tap-highlight-color: transparent;
+	background-color: #403833;
+	font-size: 100%;
+	font-family: open sans;
+	font-weight: 100;
+	height: 100%
+} */
+
+.loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    user-select: none;
+    text-align: center;
+    cursor: default;
+
+}
+.loader span{
+    position: absolute;
+    font-size: 3.5em;
+    margin-top: 156px;
+    left: -1.5em;
+    z-index: 5;
+    color: #403833;
+}
+.clouds{
+    font-size: 100px;
+    margin-left: -1.5em;
+    width: 2em;
+    text-align: center;
+}
+.cloud{
+    position: relative;
+    display: inline-block;
+    width: .0625em
+}
+.cloud::before,
+.cloud::after{
+    content: "";
+    position: relative;
+    display: block;
+}
+.cloud::before{
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    transform: translateY(0.5em) scale(0);
+    animation: cloud 1s cubic-bezier(.455, .03, .515, .955) infinite alternate forwards;
+    /* alternate:表示动画在奇数次播放时为正向播放，为偶数次播放时为反向播放。
+    /*forwards:表示动画结束后，元素直接接使用当前样式。 */
+}
+.cloud:after {
+	
+	animation: cloud-shadow 1s cubic-bezier(.455, .03, .515, .955) infinite alternate forwards;
+	bottom: -.75em;
+	width: 1em;
+	height: .25em;
+	border-radius: 100%;
+	transform: scale(0);
+	background-color: #322b27 !important
+}
+.cloud:nth-child(1):before,
+.cloud:nth-child(1):after {
+	animation-delay: 0s;
+	background: #db2f00
+}
+
+.cloud:nth-child(2):before,
+.cloud:nth-child(2):after {
+	animation-delay: .25s;
+	background: #ff6d37
+}
+
+.cloud:nth-child(3):before,
+.cloud:nth-child(3):after {
+	animation-delay: .5s;
+	background: #ffa489
+}
+
+.cloud:nth-child(4):before,
+.cloud:nth-child(4):after {
+	animation-delay: .75s;
+	background: #f2f2f2
+}
+
+.cloud:nth-child(5):before,
+.cloud:nth-child(5):after {
+	animation-delay: 1s;
+	background: #99d3d4
+}
+
+.cloud:nth-child(6):before,
+.cloud:nth-child(6):after {
+	animation-delay: 1.25s;
+	background: #56bebf
+}
+
+.cloud:nth-child(7):before,
+.cloud:nth-child(7):after {
+	animation-delay: 1.5s;
+	background: #13a3a5
+}
+
+.cloud:nth-child(8):before,
+.cloud:nth-child(8):after {
+	animation-delay: 1.75s
+}
+
+.cloud:nth-child(9):before,
+.cloud:nth-child(9):after {
+	animation-delay: 2s
+}
+
+.cloud:nth-child(10):before,
+.cloud:nth-child(10):after {
+	animation-delay: 2.25s
+}
+
+.cloud:nth-child(11):before,
+.cloud:nth-child(11):after {
+	animation-delay: 2.5s
+}
+
+.cloud:nth-child(12):before,
+.cloud:nth-child(12):after {
+	animation-delay: 2.75s
+}
+
+.cloud:nth-child(13):before,
+.cloud:nth-child(13):after {
+	animation-delay: 3s
+}
+.cloud:nth-child(14):before,
+.cloud:nth-child(14):after {
+	animation-delay: 3.25s
+}
+.cloud:nth-child(15):before,
+.cloud:nth-child(15):after {
+	animation-delay: 3.5s
+}
+.cloud:nth-child(16):before,
+.cloud:nth-child(16):after {
+	animation-delay: 3.75s
+}
+.cloud:nth-child(17):before,
+.cloud:nth-child(17):after {
+	animation-delay: 4s
+}
+@keyframes cloud{
+ 50%{
+     transform: translateY(0.5em) scale(0);
+ }
+ 100%{
+     transform: translateY(0) scale(1);
+ }
+}
+@keyframes cloud-shadow{
+    50%{
+       transform:scale(0) ; 
+    }
+    100%{
+        transform:scale(.75) ;
+    }
+}

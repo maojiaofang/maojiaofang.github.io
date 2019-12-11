@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background: #403833;
+  }
+  a {
+    background: #13a3a5;
+    padding: 5px;
+    margin: 10px;
+    display: block;
+    font-weight: 100;
+    cursor: pointer;
+    float: left;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+  }
