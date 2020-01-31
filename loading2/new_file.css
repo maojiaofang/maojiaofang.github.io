@@ -275,7 +275,7 @@ a:hover {
 	z-index: -1
 }
 
-@-webkit-keyframes mapping {
+@keyframes mapping {
 	0% {
 		top: 0
 	}
@@ -303,7 +303,7 @@ a:hover {
 	}
 }
 
-@-keyframes mapping {
+@keyframes mapping {
 	0% {
 		top: 0;
 	}
