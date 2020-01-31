@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Bootstrap 101 Template</title>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+  <style>
+    .loading {
+      margin: auto;
+      width: 400px;
+      margin-top: 25%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- loading -->
+  <div class="loading">
+    <img src="./images/timg.gif" style="width: 400px;" />
+  </div>
+
+  <!-- 导航条 -->
+  <header class="header-nav sticky">
+    <div class="container">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header" style="margin-top: 16px;">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="./images/logo_3.png" alt="" /></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 30px;">
+
+
+            <ul class="nav navbar-nav navbar-right">
+
+              <li class="dropdown">
+                <a href="#" >Home</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Home 01</a></li>
+                  <li><a href="#">Home 02</a></li>
+
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#">Menu</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Menu 01</a></li>
+                  <li><a href="#">Menu 02</a></li>
+                  <li><a href="#">Menu 03</a></li>
+
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" >Page</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Team Details</a></li>
+                  <li><a href="#">Cart</a></li>
+                  <li><a href="#">Checkout</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" >Gallery</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Gallery 01</a></li>
+                  <li><a href="#">Gallery 02</a></li>
+
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" >Shop</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">shop grid</a></li>
+                  <li><a href="#">shop list</a></li>
+                  <li><a href="#">shop details</a></li>
+
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" >Blog</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">blog 2 column</a></li>
+                  <li><a href="#">blog 3 column</a></li>
+                  <li><a href="#">Single Blog</a></li>
+
+                </ul>
+              </li>
+              <li><a href="#">Contact</a></li>
+              <li><a href=""><i class="fa fa-search" style="font-size: 18px;"></i></a></li>
+              <li><a href=""><i class="fa fa-shopping-cart" style="font-size: 18px;"></i></a></li>
+            </ul>
+
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+  </header>
+
+  <!-- silder-轮播图 -->
+  <section class="silder">
+    <div class="container">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="row">
+
+              <div class="col-lg-6">
+                <div class="welcom-content">
+                  <h1>Welcome To
+                    <span>Chopcafe</span>
+                  </h1>
+                  <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or
+                    double click me to add your own content and make changes to the font. </p>
+                  <a href="" class="silder-btn">reservation</a>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <img src="./images/slider_1.png" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="row">
+
+              <div class="col-lg-6">
+                <div class="welcom-content">
+                  <h1>Welcome To
+                    <span>Chopcafe</span>
+                  </h1>
+                  <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or
+                    double click me to add your own content and make changes to the font. </p>
+                  <a href="" class="silder-btn">reservation</a>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <img src="./images/slider_2.png" alt="...">
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"
+          style="background-image: none;">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"
+          style="background-image: none;">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- About Chopcafe -->
+  <section class="about">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6">
+          <div class="about-box">
+            <div class="about-text">
+              <h2>About <span>Chopcafe</span></h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and type setting indust Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+              <p>It has survived not only five centuries, but also the leap into electronic type setting, remaining.</p>
+              <a href="" class="about-btn">
+                See Menu
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="img-box">
+            <div class="about-img">
+              <img src="./images/about_1.jpg" class="img-fluid" alt="">
+              <div class="bg-overlay"></div>
+              <div class="play-button">
+                <a href="" class="play-btn">
+                  <i class="fa fa-play"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Taste & Delicious Menu -->
+  <section class="taste">
+    <div class="container">
+      <div class="row j-center">
+        <div class="col-lg-6">
+          <div class="taste-title text-center">
+            <h2>Taste & Delicious
+              <span>Menu</span>
+            </h2>
+            <div class="title-divider">
+              <i class="fa fa-cutlery"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col-lg-12">
+          <div class="taste-filter text-center">
+            <button class="taste-btn active-btn">breakfast</button>
+            <button class="taste-btn ">lunch</button>
+            <button class="taste-btn">dinner</button>
+            <button class="taste-btn">snacks</button>
+            <button class="taste-btn ">fast food</button>
+            <button class="taste-btn">salad & wraps</button>
+          </div>
+        </div>
+
+      </div>
+      <div class="row grid">
+
+        <div class=" col-sm-12 col-md-6 col-lg-4 menu_item breakfast lunch snacks">
+          <div class="grid-item food_grid_box">
+            <div class="grid-inner-item">
+              <div class="grid-img">
+                <img class="img-fluid" src="./images/menu_1.jpg" alt="">
+                <div class="overlay-img"></div>
+                <div class="overlay-content">
+                  <a href="" class="btn-a btn-zoom">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="" class="btn-a btn-link">
+                    <i class="fa fa-link"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="grid-info">
+                <h3>
+                  <a href="">Chicken Breast</a>
+                  <span>$ 11.00</span>
+                </h3>
+                <p>Seasoned chicken, parmesan, maple cured rasherai chicken red onion, mushroom.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" col-sm-12 col-md-6 col-lg-4 menu_item breakfast fastfood dinner">
+          <div class="grid-item food_grid_box">
+            <div class="grid-inner-item">
+              <div class="grid-img">
+                <img class="img-fluid" src="./images/menu_2.jpg" alt="">
+                <div class="overlay-img"></div>
+                <div class="overlay-content">
+                  <a href="" class="btn-a btn-zoom">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="" class="btn-a btn-link">
+                    <i class="fa fa-link"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="grid-info">
+                <h3>
+                  <a href="">Fresh Grilled Asparagus</a>
+                  <span>$ 25.00</span>
+                </h3>
+                <p>Seasoned chicken, parmesan, maple cured rasherai chicken red onion, mushroom.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" col-sm-12 col-md-6 col-lg-4 menu_item breakfast Salad lunch">
+          <div class="grid-item food_grid_box">
+            <div class="grid-inner-item">
+              <div class="grid-img">
+                <img class="img-fluid" src="./images/menu_3.jpg" alt="">
+                <div class="overlay-img"></div>
+                <div class="overlay-content">
+                  <a href="" class="btn-a btn-zoom">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="" class="btn-a btn-link">
+                    <i class="fa fa-link"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="grid-info">
+                <h3>
+                  <a href="">Sashimi Steak</a>
+                  <span>$ 35.00</span>
+                </h3>
+                <p>Seasoned chicken, parmesan, maple cured rasherai chicken red onion, mushroom.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" col-sm-12 col-md-6 col-lg-4 menu_item breakfast snacks dinner fastfood">
+          <div class="grid-item food_grid_box">
+            <div class="grid-inner-item">
+              <div class="grid-img">
+                <img class="img-fluid" src="./images/menu_4.jpg" alt="">
+                <div class="overlay-img"></div>
+                <div class="overlay-content">
+                  <a href="" class="btn-a btn-zoom">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="" class="btn-a btn-link">
+                    <i class="fa fa-link"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="grid-info">
+                <h3>
+                  <a href="">Fresh Fruits Salads</a>
+                  <span>$ 11.00</span>
+                </h3>
+                <p>Seasoned chicken, parmesan, maple cured rasherai chicken red onion, mushroom.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" col-sm-12 col-md-6 col-lg-4 menu_item breakfast Salad fastfood lunch">
+          <div class="grid-item food_grid_box">
+            <div class="grid-inner-item">
+              <div class="grid-img">
+                <img class="img-fluid" src="./images/menu_5.jpg" alt="">
+                <div class="overlay-img"></div>
+                <div class="overlay-content">
+                  <a href="" class="btn-a btn-zoom">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="" class="btn-a btn-link">
+                    <i class="fa fa-link"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="grid-info">
+                <h3>
+                  <a href="">Sweet Desserts</a>
+                  <span>$ 26.00</span>
+                </h3>
+                <p>Seasoned chicken, parmesan, maple cured rasherai chicken red onion, mushroom.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" col-sm-12 col-md-6 col-lg-4 menu_item breakfast snacks Salad  dinner">
+          <div class="grid-item food_grid_box">
+            <div class="grid-inner-item">
+              <div class="grid-img">
+                <img class="img-fluid" src="./images/menu_6.jpg" alt="">
+                <div class="overlay-img"></div>
+                <div class="overlay-content">
+                  <a href="" class="btn-a btn-zoom">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="" class="btn-a btn-link">
+                    <i class="fa fa-link"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="grid-info">
+                <h3>
+                  <a href="">Salad & Egg</a>
+                  <span>$ 18.00</span>
+                </h3>
+                <p>Seasoned chicken, parmesan, maple cured rasherai chicken red onion, mushroom.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How To Order Online -->
+  <section class="how how_to">
+    <div class="container">
+      <div class="row j-center">
+        <div class="col-lg-6">
+          <div class="taste-title text-center">
+            <h2>How To
+              <span>Order Online</span>
+            </h2>
+            <div class="title-divider">
+              <i class="fa fa-cutlery"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class=" col-sm-12 col-md-6 col-lg-4">
+          <div class="grid-item">
+            <div class="grid_inner_item item_line">
+              <div class="icon_box">
+                <i class="fa fa-microchip"></i>
+              </div>
+              <div class="grid_info">
+                <h4>Choose Your Item</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" col-sm-12 col-md-6 col-lg-4">
+          <div class="grid-item">
+            <div class="grid_inner_item item_line1">
+              <div class="icon_box">
+                <i class="fa fa-mobile"></i>
+              </div>
+              <div class="grid_info">
+                <h4>Order Food</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" col-sm-12 col-md-6 col-lg-4">
+          <div class="grid-item">
+            <div class="grid_inner_item ">
+              <div class="icon_box">
+                <i class="fa fa-bicycle"></i>
+              </div>
+              <div class="grid_info">
+                <h4>Ready For Delivery</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet Our Expert Chefs -->
+  <section class="meet meet_2  bg_img" style="background-image: url(images/chef_bg.jpg);">
+    <div class="bg_overly"></div>
+    <div class="container">
+      <div class="row j-center">
+        <div class="col-lg-6">
+          <div class="taste-title text-center">
+            <h2 style="color: white;">Meet Our
+              <span>Expert Chefs </span>
+            </h2>
+            <div class="title-divider">
+              <i class="fa fa-cutlery"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+
+
+        <!-- Wrapper for slides -->
+        <div class="box_over">
+          <div class="carousel-inner" role="listbox">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-4 item" style="width: 390px;">
+                <div class="meet-img">
+                  <img src="images/chef_1.jpg" alt="">
+                  <div class="overlay_content">
+                    <div class="social">
+                      <ul>
+                        <li>
+                          <a href="">
+                            <i class="fa fa-facebook-f"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <i class="fa fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <i class="fa fa-linkedin"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="meet_info">
+                  <h3>
+                    <a href="">Henry Collins</a>
+                  </h3>
+                  <p>Head Of Chef</p>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 item" style="width: 390px;">
+                <div class="meet-img">
+                  <img src="images/chef_2.jpg" alt="">
+                  <div class="overlay_content">
+                    <div class="social">
+                      <ul>
+                        <li>
+                          <a href="">
+                            <i class="fa fa-facebook-f"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <i class="fa fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <i class="fa fa-linkedin"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="meet_info">
+                  <h3>
+                    <a href="">Henry Collins</a>
+                  </h3>
+                  <p>Head Of Chef</p>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 item" style="width: 390px;">
+                <div class="meet-img">
+                  <img src="images/chef_3.jpg" alt="">
+                  <div class="overlay_content">
+                    <div class="social">
+                      <ul>
+                        <li>
+                          <a href="">
+                            <i class="fa fa-facebook-f"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <i class="fa fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <i class="fa fa-linkedin"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="meet_info">
+                  <h3>
+                    <a href="">Henry Collins</a>
+                  </h3>
+                  <p>Head Of Chef</p>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+        <!-- Controls -->
+        <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a> -->
+      </div>
+
+
+    </div>
+    </div>
+  </section>
+
+  <!-- Book A Reservation -->
+  <section class="book book_1">
+    <div class="container">
+      <div class="row j-center">
+        <div class="col-lg-6">
+          <div class="taste-title text-center">
+            <h2>Book A
+              <span>Reservation</span>
+            </h2>
+            <div class="title-divider">
+              <i class="fa fa-cutlery"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-lg-6">
+          <div class="reservation_form">
+            <form action="">
+              <div class="row">
+
+                <div class=" col-lg-6">
+                  <div class="form_group">
+                    <input style="outline:none" ; type="text" class="form_control" placeholder="Your Name" name="name"
+                      required>
+                    <i class="fa fa-user"></i>
+                  </div>
+                </div>
+                <div class=" col-lg-6">
+                  <div class="form_group">
+                    <input style="outline:none" ; type="text" class="form_control" placeholder="Your Phone"
+                      name="Number" required>
+                    <i class="fa fa-phone"></i>
+                  </div>
+                </div>
+                <div class=" col-lg-4">
+                  <div class="form_group">
+                    <input style="outline:none" ; type="text" class="form_control hasDatepicker" placeholder="Date"
+                      name="Date" required>
+                    <i class="fa fa-calendar"></i>
+                  </div>
+                </div>
+                <div class=" col-lg-4">
+                  <div class="form_group">
+                    <input style="outline:none" ; type="text" class="form_control " placeholder="Time" name="time"
+                      required>
+                    <i class="fa fa-clock-o"></i>
+                  </div>
+                </div>
+                <div class=" col-lg-4">
+                  <div class="form_group">
+                    <input style="outline:none" ; type="text" class="form_control" placeholder="People" name="text"
+                      required>
+                    <i class="fa fa-user-o"></i>
+                  </div>
+                </div>
+                <div class=" col-lg-12">
+                  <div class="form_group">
+                    <textarea style="outline:none" ; class="form_control" name="Message"
+                      placeholder="Say Somthing About Special"></textarea>
+                  </div>
+                </div>
+                <div class=" col-lg-12">
+                  <div class="form_button text-center">
+                    <button class="chopcafe_btn form_btn">Reserve</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class=" col-lg-6 book-img">
+          <div class="chopcafe_img_box">
+            <div class="chopcafe_img reservation_img">
+              <img src="images/book_1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What Say Our Customer -->
+  <section class="what what_1 bg_img" style="background-image: url(images/review_bg.jpg);">
+    <div class="bg_overly"></div>
+    <div class="container">
+      <div class="row j-center">
+        <div class="col-lg-6">
+          <div class="taste-title text-center">
+            <h2 style="color: white;">What Say
+              <span>Our Customer </span>
+            </h2>
+            <div class="title-divider">
+              <i class="fa fa-cutlery"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row j-center" style="margin-bottom: -100px;">
+        <div class="col-lg-8">
+          <div class="taste-title text-center">
+            <div id="carousel-example-genericA" class="carousel slide" data-ride="carousel" data-interval="2000">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-genericA" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-genericA" data-slide-to="1"></li>
+                <li data-target="#carousel-example-genericA" data-slide-to="2"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox" style="margin-top: -46px;padding-bottom: 80px;">
+                <div class="item active">
+                  <div class="carousel-caption">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                      the industry's standard dummy text ever since the 1500 Lorem Ipsum is simply dummy text of the
+                      printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                  </div>
+                  <div class="author">
+                    <div class="author-img">
+                      <img src="images/client_1.jpg" alt="...">
+                    </div>
+                    <div class="author-info">
+                      <h4>Saiful Islam</h4>
+                      <p>CEO & Founder</p>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="item">
+                  <div class="carousel-caption">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                      the industry's standard dummy text ever since the 1500 Lorem Ipsum is simply dummy text of the
+                      printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                  </div>
+                  <div class="author">
+                    <div class="author-img">
+                      <img src="images/client_1.jpg" alt="...">
+                    </div>
+                    <div class="author-info">
+                      <h4>Saiful Islam</h4>
+                      <p>CEO & Founder</p>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="item">
+                  <div class="carousel-caption">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                      the industry's standard dummy text ever since the 1500 Lorem Ipsum is simply dummy text of the
+                      printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                  </div>
+                  <div class="author">
+                    <div class="author-img">
+                      <img src="images/client_1.jpg" alt="...">
+                    </div>
+                    <div class="author-info">
+                      <h4>Saiful Islam</h4>
+                      <p>CEO & Founder</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- Controls -->
+              <!-- <a class="left carousel-control" href="#carousel-example-genericA" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-genericA" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest News & Articles -->
+  <section class="latest news">
+    <div class="container">
+      <div class="row j-center">
+        <div class="col-lg-6">
+          <div class="taste-title text-center">
+            <h2>Latest
+              <span> News & Articles </span>
+            </h2>
+            <div class="title-divider">
+              <i class="fa fa-cutlery"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="grid-item">
+            <div class="grid-inner-item">
+              <div class="grid-img">
+                <img src="images/blog_1.jpg" class="img-fluid" alt="">
+                <div class="overlay-img"></div>
+                <div class="overlay-content">
+                  <a href="" class="chopcafe_link blog_link">Read more</a>
+                </div>
+              </div>
+              <div class="grid-info">
+                <div class="post-meta">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <i class="fa fa-user-o"></i>
+                        By Admin
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <i class="fa fa-calendar"></i>
+                        24 Sept , 2019
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="post-info">
+                  <h3>
+                    <a href="">Lorem Ipsum is simply the text of the printing.</a>
+                  </h3>
+                  <p>There are many variation of pasages of Lorem Ipsum available, but the majority have sufered
+                    alteration by injected humour.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="grid-item">
+            <div class="grid-inner-item">
+              <div class="grid-img">
+                <img src="images/blog_2.jpg" class="img-fluid" alt="">
+                <div class="overlay-img"></div>
+                <div class="overlay-content">
+                  <a href="" class="chopcafe_link blog_link">Read more</a>
+                </div>
+              </div>
+              <div class="grid-info">
+                <div class="post-meta">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <i class="fa fa-user-o"></i>
+                        By Admin
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <i class="fa fa-calendar"></i>
+                        24 Sept , 2019
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="post-info">
+                  <h3>
+                    <a href="">Lorem Ipsum is simply the text of the printing.</a>
+                  </h3>
+                  <p>There are many variation of pasages of Lorem Ipsum available, but the majority have sufered
+                    alteration by injected humour.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="grid-item">
+            <div class="grid-inner-item">
+              <div class="grid-img">
+                <img src="images/blog_3.jpg" class="img-fluid" alt="">
+                <div class="overlay-img"></div>
+                <div class="overlay-content">
+                  <a href="" class="chopcafe_link blog_link">Read more</a>
+                </div>
+              </div>
+              <div class="grid-info">
+                <div class="post-meta">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <i class="fa fa-user-o"></i>
+                        By Admin
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <i class="fa fa-calendar"></i>
+                        24 Sept , 2019
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="post-info">
+                  <h3>
+                    <a href="">Lorem Ipsum is simply the text of the printing.</a>
+                  </h3>
+                  <p>There are many variation of pasages of Lorem Ipsum available, but the majority have sufered
+                    alteration by injected humour.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="grid-item">
+            <div class="grid-inner-item">
+              <div class="grid-img">
+                <img src="images/blog_4.jpg" class="img-fluid" alt="">
+                <div class="overlay-img"></div>
+                <div class="overlay-content">
+                  <a href="" class="chopcafe_link blog_link">Read more</a>
+                </div>
+              </div>
+              <div class="grid-info">
+                <div class="post-meta">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <i class="fa fa-user-o"></i>
+                        By Admin
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <i class="fa fa-calendar"></i>
+                        24 Sept , 2019
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="post-info">
+                  <h3>
+                    <a href="">Lorem Ipsum is simply the text of the printing.</a>
+                  </h3>
+                  <p>There are many variation of pasages of Lorem Ipsum available, but the majority have sufered
+                    alteration by injected humour.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="chopcafe_footer chopcafe_footer_1 bg_img" style="background-image: url(./images/footer_bg.jpg);">
+    <div class="bg_overly"></div>
+    <div class="container">
+      <div class="footer_widget footer_widget_1">
+        <div class="row">
+
+          <div class=" col-md-6 col-lg-3 m-button">
+            <div class="footer_widget_box">
+              <div class="widget_title">
+                <h4>Contact Us</h4>
+              </div>
+              <div class="widget_contact">
+                <div class="info-list">
+                  <div class="info-icon">
+                    <i class="fa fa-map-marker"></i>
+                  </div>
+                  <div class="info-text">
+                    <p>360 Harvest ST , North<br>London, USA</p>
+                  </div>
+                </div>
+                <div class="info-list">
+                  <div class="info-icon">
+                    <i class="fa fa-envelope"></i>
+                  </div>
+                  <div class="info-text">
+                    <p><a href="">demochopcafe@gmail.com</a></p>
+                    <p><a href="">chopcafeinfo@gmail.com</a></p>
+                  </div>
+                </div>
+                <div class="info-list">
+                  <div class="info-icon">
+                    <i class="fa fa-phone"></i>
+                  </div>
+                  <div class="info-text">
+                    <p><a href="">+8123 456 7890</a></p>
+                    <p><a href="">+278  8291 1891</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-md-6 col-lg-3 m-button">
+            <div class="footer_widget_box">
+              <div class="widget_title">
+                <h4>Opening Hours</h4>
+              </div>
+              <div class="widget_time">
+                <div class="time-list">
+                  <h6>Saturday - Sunday -Monday</h6>
+                  <p>08:00 AM - 10:00 PM</p>
+                </div>
+                <div class="time-list">
+                  <h6>Tuesday - Wednesday - Thrusday</h6>
+                  <p>10:00 AM - 12:00 PM</p>
+                </div>
+                <div class="time-list">
+                  <h6>Friday</h6>
+                  <p>closed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-md-6 col-lg-3 m-button">
+            <div class="footer_widget_box">
+              <div class="widget_title">
+                <h4>Latest News</h4>
+              </div>
+              <div class="widget_news">
+                <div class="single_news">
+                  <div class="news_thumb">
+                    <a href="">
+                      <img src="images/news_1.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="news_link">
+                    <h3>
+                      <a href="">Lorem Ipsum is simply dmy text of the printing.</a>
+                    </h3>
+                  </div>
+                </div>
+                <div class="single_news">
+                  <div class="news_thumb"news_thumb>
+                    <a href="">
+                      <img src="images/news_2.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="news_link">
+                    <h3>
+                      <a href="">Lorem Ipsum is simply dmy text of the printing.</a>
+                    </h3>
+                  </div>
+                </div>
+                <div class="single_news">
+                  <div class="news_thumb">
+                    <a href="">
+                      <img src="images/news_3.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="news_link">
+                    <h3>
+                      <a href="">Lorem Ipsum is simply dmy text of the printing.</a>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-md-6 col-lg-3 m-button">
+            <div class="footer_widget_box">
+              <div class="widget_title">
+                <h4>Follow Us on</h4>
+              </div>
+              <div class="footer_social_widget">
+                <ul class="social_widget">
+                  <li><a href="" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="" class="pinterest"><i class="fa fa-pinterest-p"></i></a></li>
+                  <li><a href="" class="vimeo"><i class="fa fa-vimeo"></i></a></li>
+                  <li><a href="" class="behance"><i class="fa fa-behance"></i></a></li>
+                </ul>
+              </div>
+              <div class="widget_payment">
+                <div class="widget_title">
+                  <h4>Online Payments by</h4>
+                </div>
+                <div class="payment_method">
+                  <a href="">
+                    <img src="images/pay_1.png" alt="">
+                  </a>
+                  <a href="">
+                    <img src="images/pay_2.png" alt="">
+                  </a>
+                  <a href="">
+                    <img src="images/pay_3.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chopcafe_copyright chopcafe_copyright_1">
+        <div class="row align-items-center">
+
+          <div class=" col-md-6 col-lg-12">
+            <div class="copyright_text">
+              <p>© Copyright 2019 ChopCafe. All rights reserved.</p>
+            </div>
+          </div>
+          <div class=" col-md-6 col-lg-12">
+            <div class="copyright_text float-right">
+              <p>Designed by Code Astrology</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- fas fa-angle-up -->
+  <a href="index.html" id="scroll_top" style="display: inline;">
+    <i class="fa fas fa-angle-up"></i>
+  </a>
+  <!-- <script>
+    // 考虑用for循环加switch判断方法
+  var btns = document.querySelectorAll(".taste-filter button");
+  var fastfood=document.getElementsByClassName("fastfood");
+  var breakfast=document.getElementsByClassName("breakfast");
+  var bdinner=document.getElementsByClassName("dinner");
+  var Salad=document.getElementsByClassName("Salad");
+  var  snacks=document.getElementsByClassName(" snacks");
+  var lunch=document.getElementsByClassName("lunch");
+  for(var i=0;i<btns.length;i++){
+    btns[i].index =i;
+    btns[i].onclick =function(){
+      for(var j = 0;j < btns.length;j++){
+						btns[j].className = "";
+						menuitem[j].style.display = "none";
+					}
+          this.className = "active-btn";
+					// 循环处理盒子
+          fastfood[this.index].style.display = "block";
+				}
+
+    }
+  
+  </script> -->
+  <script>
+    $(window).load(function () {
+      $(".loading").fadeOut(1000);
+    })
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

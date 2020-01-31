@@ -1,0 +1,1829 @@
+/* header -nav  */
+
+.header-nav.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 9999;
+  background-color: #9ec80e;
+
+  .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+
+    .nav {
+      li {
+        font-size: 16px;
+
+        &:hover {
+          .dropdown-menu {
+            display: block;
+          }
+        }
+
+        .dropdown-menu {
+          background-color: #9ec80e;
+          border: none;
+          width: 250px;
+          margin-top: 20px;
+          text-align: center;
+        }
+
+        a {
+          color: white;
+          text-transform: uppercase;
+        }
+      }
+
+      &.navbar-nav {
+        .open {
+          a {
+            background-color: transparent;
+
+            &:hover {
+              background-color: transparent;
+              // transform: rotateX(-45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//  silder- 轮播图
+.silder {
+  padding-top: 100px;
+  margin-bottom: 180px;
+
+  .carousel {
+    .carousel-inner {
+      overflow: inherit;
+
+      .item {
+        .row {
+          .welcom-content {
+            margin-top: 35%;
+
+            h1 {
+              font-size: 52px;
+              line-height: 62px;
+              font-weight: bold;
+              margin-bottom: 25px;
+
+              span {
+                color: #9ec80e;
+              }
+            }
+
+            p {
+              font-size: 15px;
+              color: #999;
+            }
+
+            .silder-btn {
+              margin-top: 40px;
+              position: relative;
+              display: inline-block;
+              padding: 12px 25px;
+              color: #ffffff;
+              font-size: 16px;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              background-color: #9ec80e;
+              z-index: 1;
+              outline: none;
+              transition: all 0.5s;
+              text-decoration: none;
+
+              &:hover {
+                background-color: #010a19;
+                transition: all 0.5s;
+                transform: rotateY(15deg);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .left {
+      left: -140px;
+    }
+
+    .right {
+      right: -96px;
+    }
+
+    .carousel-control {
+      .glyphicon-chevron-left {
+        background: rgba(0, 0, 0, 0.2);
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+        color: black;
+
+        &:hover {
+          background: #9ec80e;
+          color: white;
+        }
+      }
+
+      .glyphicon-chevron-right {
+        background: rgba(0, 0, 0, 0.2);
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+        color: black;
+
+        &:hover {
+          background: #9ec80e;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+//  About Chopcafe
+.about {
+  padding: 80px 0;
+  background-color: #f6f7f8;
+
+  .about-box {
+    .about-text {
+      h2 {
+        font-size: 52px;
+        line-height: 62px;
+        font-weight: bold;
+        margin-bottom: 25px;
+
+        span {
+          color: #9ec80e;
+        }
+      }
+
+      p {
+        font-size: 15px;
+        color: #999;
+        margin-bottom: 28px;
+      }
+
+      .about-btn {
+        margin-top: 40px;
+        position: relative;
+        display: inline-block;
+        padding: 12px 25px;
+        color: #ffffff;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background-color: #9ec80e;
+        z-index: 1;
+        outline: none;
+        transition: all 0.5s;
+        text-decoration: none;
+
+        &:hover {
+          background-color: #010a19;
+          transition: all 0.5s;
+          transform: rotateY(15deg);
+        }
+      }
+    }
+  }
+
+  .img-box {
+    .about-img {
+      position: relative;
+
+      .bg-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #010a19;
+        opacity: 0.8;
+      }
+
+      .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .play-btn {
+          position: relative;
+          display: block;
+          width: 60px;
+          height: 60px;
+          line-height: 60px;
+          text-align: center;
+          border-radius: 50%;
+          background-color: rgb(141, 199, 63);
+          font-size: 16px;
+          color: #fff;
+
+          &::after {
+            display: block;
+            width: 80px;
+            height: 80px;
+            line-height: 60px;
+            border-radius: 50%;
+            background-color: rgb(141, 199, 63);
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 50%;
+            opacity: 0.7;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+          }
+
+          &::before {
+            display: block;
+            width: 100px;
+            height: 100px;
+            line-height: 80px;
+            border-radius: 50%;
+            background-color: rgb(141, 199, 63);
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 50%;
+            opacity: 0.5;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+          }
+        }
+      }
+    }
+  }
+}
+
+img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+// Taste & Delicious Menu
+.taste {
+  padding: 108px 0 120px;
+  margin-bottom: -102px;
+  .row {
+    display: flex;
+  }
+
+  .taste-filter {
+    margin-bottom: 60px;
+
+    &.text-center {
+      text-align: center !important;
+    }
+
+    .taste-btn {
+      padding: 12px 26px;
+      border: 1px solid #e1e1e1;
+      font-size: 18px;
+      color: #7d858b;
+      text-transform: capitalize;
+      background-color: transparent;
+      border-radius: 0;
+      margin-left: 13px;
+      margin-right: 13px;
+
+      &.active-btn {
+        border-color: #9ec80e;
+        color: #fff;
+        background-color: #9ec80e;
+      }
+
+      &:hover {
+        border-color: #9ec80e;
+        color: #fff;
+        background-color: #9ec80e;
+        transition: all 0.5s;
+        transform: skewX(-10deg);
+      }
+
+      &:focus {
+        border-color: #9ec80e;
+        color: #fff;
+      }
+    }
+  }
+
+  .grid {
+    position: relative;
+    // height: 930px;
+   
+
+    .grid-item {
+      margin-bottom: 60px;
+      transition: all 0.5s ease-out;
+
+      &:hover {
+        .grid-inner-item {
+          .grid-img {
+            .overlay-content {
+              display: block;
+
+              .btn-zoom {
+                &:hover {
+                  background-color: #9ec80e;
+                }
+              }
+
+              .btn-link {
+                &:hover {
+                  background-color: #9ec80e;
+                }
+              }
+            }
+
+            .overlay-img {
+              display: block;
+            }
+          }
+        }
+      }
+
+      &.food_grid_box {
+        &:hover {
+          background-color: rgb(255, 255, 255);
+          box-shadow: 0px 5px 30px 0px rgba(55, 55, 55, 0.26);
+
+          .grid-inner-item {
+            .grid-info {
+              border-color: #fff;
+            }
+          }
+        }
+      }
+
+      .grid-inner-item {
+        .grid-img {
+          position: relative;
+
+          .overlay-img {
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: none;
+            // visibility: hidden;
+            transition: all 0.5s;
+          }
+
+          .overlay-content {
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            transition: all 0.5s;
+            display: none;
+
+            .btn-a {
+              width: 40px;
+              height: 40px;
+              line-height: 40px;
+              font-size: 16px;
+              border: 1px solid #fff;
+              margin-left: 8px;
+              margin-right: 8px;
+              display: inline-block;
+              text-align: center;
+              color: #fff;
+            }
+          }
+        }
+
+        .grid-info {
+          border: 1px solid #e1e1e1;
+          border-top: none;
+          padding: 26px 30px 22px;
+          transition: all 0.5s;
+
+          h3 {
+            font-size: 18px;
+
+            a {
+              color: #010a19;
+              text-decoration: none;
+            }
+
+            span {
+              float: right;
+              color: #9ec80e;
+              font-size: 18px;
+              font-weight: bold;
+            }
+
+            &::after {
+              display: block;
+              content: "";
+              width: 60px;
+              height: 1px;
+              background-color: #9ec80e;
+              margin: 19px 0 13px;
+            }
+          }
+
+          p {
+            font-size: 15px;
+            color: #999;
+          }
+        }
+      }
+    }
+  }
+}
+
+// How To Order Online
+.how {
+  background-color: #f6f7f8;
+
+  &.how_to {
+    padding: 108px 0 120px;
+
+    .grid-item {
+      position: relative;
+      text-align: center;
+      transition: all 0.5s ease-out;
+
+      .grid_inner_item {
+        position: relative;
+
+        &.item_line {
+          &::before {
+            content: "";
+            position: absolute;
+            top: -17px;
+            right: -200px;
+            width: 100%;
+            background: url(../images/order_line_1.png) no-repeat center;
+            height: 55px;
+          }
+        }
+
+        &.item_line1 {
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: 43px;
+            right: -200px;
+            width: 100%;
+            background: url(../images/order_line_2.png) no-repeat center;
+            height: 55px;
+          }
+        }
+      }
+
+      .icon_box {
+        position: relative;
+        display: block;
+        width: 120px;
+        height: 120px;
+        line-height: 140px;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 1px solid #9ec80e;
+        margin: 0 auto;
+        transition: all 0.5s;
+
+        &:hover {
+          background-color: #9ec80e;
+
+          i {
+            color: white;
+          }
+        }
+
+        i {
+          font-size: 50px;
+          color: #9ec80e;
+        }
+      }
+
+      .grid_info {
+        h4 {
+          color: #010a19;
+          font-weight: bold;
+          margin-top: 45px;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+// 公共样式
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  &.j-center {
+    justify-content: center !important;
+  }
+
+  .taste-title {
+    margin-bottom: 55px;
+
+    &.text-center {
+      text-align: center !important;
+
+      h2 {
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: bold;
+        margin-bottom: 14px;
+
+        span {
+          color: #9ec80e;
+        }
+      }
+
+      .title-divider {
+        position: relative;
+        width: 400px;
+        margin: 0 auto;
+
+        &::before {
+          position: absolute;
+          content: "";
+          top: 15px;
+          left: 0;
+          width: 175px;
+          height: 2px;
+          background-color: #9ec80e;
+        }
+
+        &::after {
+          position: absolute;
+          content: "";
+          top: 15px;
+          right: 0;
+          width: 175px;
+          height: 2px;
+          background-color: #9ec80e;
+        }
+
+        i {
+          color: #9ec80e;
+          position: relative;
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
+
+// Meet Our Expert Chefs
+.meet_2 {
+  padding: 108px 0 120px;
+
+  .box_over {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+    .carousel-inner {
+      opacity: 1;
+
+      .item {
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        height: 100%;
+        min-height: 1px;
+
+        &:hover {
+          .meet-img {
+            .overlay_content {
+              top: -2%;
+              transition: all 0.5s;
+            }
+          }
+        }
+
+        .meet-img {
+          position: relative;
+
+          img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+            border-style: none;
+          }
+
+          .overlay_content {
+            position: absolute;
+            top: -100%;
+            right: 30px;
+            background-color: rgb(141, 199, 63);
+            width: 40px;
+            height: 138px;
+            transition: all 0.7s;
+
+            .social {
+              text-align: center;
+              margin-left: -37px;
+              margin-top: 23px;
+
+              ul {
+                li {
+                  margin-bottom: 7px;
+                  list-style: none;
+
+                  a {
+                    display: block;
+                    color: #fff;
+                    font-size: 16px;
+                    text-decoration: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .meet_info {
+          padding: 25px 30px 22px;
+          text-align: center;
+          background-color: #9ec80e;
+
+          h3 {
+            color: #ffffff;
+            margin-bottom: 3px;
+            font-size: 24px;
+            outline: none;
+
+            a {
+              color: #fff;
+              outline: none;
+              text-decoration: none;
+            }
+          }
+
+          p {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+
+  .carousel-control {
+    &.left {
+      left: -140px;
+      background-image: none;
+    }
+
+    &.right {
+      right: -96px;
+      background-image: none;
+    }
+
+    .glyphicon-chevron-left {
+      background: white;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 20px;
+      color: black;
+
+      &:hover {
+        background: #9ec80e;
+        color: white;
+      }
+    }
+
+    .glyphicon-chevron-right {
+      background: white;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 20px;
+      color: black;
+
+      &:hover {
+        background: #9ec80e;
+        color: white;
+      }
+    }
+  }
+}
+
+// Book A Reservation
+.book {
+  position: relative;
+
+  &.book_1 {
+    padding: 108px 0 120px;
+
+    .reservation_form {
+      .form_group {
+        margin-bottom: 30px;
+        position: relative;
+
+        .form_control {
+          width: 100%;
+          height: 50px;
+          padding: 20px;
+          font-size: 16px;
+          color: #7d858b;
+          border: 1px solid #9ec80e;
+        }
+
+        i {
+          position: absolute;
+          right: 20px;
+          top: 18px;
+          color: #9ec80e;
+
+          &.fa {
+            font-size: 16px;
+            font-weight: 900;
+          }
+        }
+      }
+
+      textarea {
+        &.form_control {
+          min-height: 150px;
+          height: 150px;
+          display: inherit;
+          padding: 13px 20px;
+        }
+      }
+
+      .text-center {
+        text-align: center !important;
+
+        .chopcafe_btn {
+          padding: 12px 44px;
+          position: relative;
+          display: inline-block;
+
+          color: #ffffff;
+          font-size: 16px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          background-color: #9ec80e;
+          z-index: 1;
+          outline: none;
+          transition: all 0.5s;
+
+          &:hover {
+            background-color: #010a19;
+            transition: all 0.5s;
+            transform: rotateY(15deg);
+          }
+        }
+      }
+    }
+
+    .chopcafe_img {
+      &.reservation_img {
+        position: absolute;
+        bottom: -120px;
+
+        .img-fluid {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+// 公共样式
+button {
+  border: none;
+}
+
+.bg_overly {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #010a19;
+  opacity: 0.8;
+}
+
+.bg_img {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+a {
+  color: #7D858B;
+  text-decoration: none;
+}
+
+// What Say Our Customer
+.what {
+  padding: 108px 0 120px;
+
+  .col-lg-8 {
+    width: 100%;
+  }
+
+  .item {
+    margin-top: 150px;
+
+    .carousel-caption {
+      padding-bottom: 48px;
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .author {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 50px;
+    .author-img {
+      img {
+        display: block;
+      }
+
+    }
+
+    .author-info {
+      margin-left: 20px;
+      text-align: left;
+
+      h4 {
+        color: #fff;
+        margin-bottom: 8px;
+        font-size: 24px;
+      }
+
+      p {
+        color: #9ec80e;
+      }
+    }
+  }
+
+  .carousel-indicators {
+    li {
+      border-radius: 0;
+      background-color: rgb(255, 255, 255);
+
+      &.active {
+        background-color: transparent;
+        border: 2px solid #9ec80e;
+      }
+    }
+  }
+}
+
+// Latest News & Articles
+.latest {
+  position: relative;
+  padding: 108px 0 90px;
+
+  .grid-item {
+    position: relative;
+    margin-bottom: 30px;
+    transition: all .5s;
+
+    &:hover {
+      .grid-inner-item {
+        .grid-img {
+          .img-fluid {
+            max-width: 100%;
+            height: auto;
+          }
+
+          .overlay-img {
+            display: block;
+          }
+
+          .overlay-content {
+            display: block;
+
+            .chopcafe_link {
+              color: #fff;
+            }
+          }
+        }
+
+        .grid-info {
+          background-color: #9ec80e;
+
+          .post-meta {
+            ul {
+              li {
+                a {
+                  color: #fff;
+
+                  i {
+                    color: #fff;
+                  }
+                }
+              }
+            }
+          }
+
+          .post-info {
+            h3 {
+
+              a {
+                color: #fff;
+
+              }
+            }
+
+            p {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    .grid-inner-item {
+      display: flex;
+      -webkit-box-align: stretch;
+      align-items: stretch;
+
+      .grid-img {
+        width: 35%;
+        position: relative;
+
+        .img-fluid {
+          max-width: 100%;
+          height: auto;
+        }
+
+        .overlay-img {
+          display: none;
+
+          top: 0;
+          left: 0;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, .7);
+
+          transition: all .5s;
+        }
+
+        .overlay-content {
+          top: 50%;
+          left: 50%;
+          display: none;
+          transition: all .7s;
+          position: absolute;
+          transform: translate(-50%, -50%);
+
+          .chopcafe_link {
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .grid-info {
+        width: 65%;
+        padding: 25px 30px 23px;
+        background-color: #f6f7f8;
+        border: 1px solid #e1e1e1;
+        transition: all .5s;
+
+        .post-meta {
+          margin-bottom: 18px;
+
+          ul {
+            li {
+              display: inline-block;
+              margin-right: 66px;
+              margin-left: -42px;
+              list-style: none;
+
+              a {
+                color: #7D858B;
+                text-decoration: none;
+                font-size: 14px;
+
+                i {
+                  margin-right: 10px;
+                  color: #9ec80e;
+                  font-weight: 900;
+                }
+              }
+            }
+          }
+        }
+
+        .post-info {
+          h3 {
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 22px;
+
+            a {
+              color: #010a19;
+              text-decoration: none;
+            }
+          }
+
+          p {
+            font-size: 15px;
+            color: #999;
+          }
+        }
+      }
+    }
+  }
+}
+
+// footer 
+.chopcafe_footer {
+  padding: 108px 0 120px;
+
+  .footer_widget_1 {
+    padding: 113px 0 100px;
+    border-bottom: 1px solid #fff;
+
+    .footer_widget_box {
+      .widget_title {
+        margin-bottom: 40px;
+
+        h4 {
+          color: #9ec80e;
+          font-size: 25px;
+          margin: 0;
+          padding: 0;
+
+        }
+      }
+
+      .widget_contact {
+
+        .info-list {
+          margin-bottom: 20px;
+          display: flex;
+          align-items: center;
+
+          .info-icon {
+            i {
+              display: block;
+              width: 55px;
+              height: 55px;
+              line-height: 55px;
+              text-align: center;
+              background-color: #9ec80e;
+              color: #feffff;
+              font-size: 18px;
+            }
+          }
+
+          .info-text {
+            margin-left: 20px;
+
+            p {
+              color: #fff;
+
+              a {
+                color: #fff;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+
+      }
+
+      .widget_time {
+        .time-list {
+          margin-bottom: 20px;
+
+          h6 {
+            color: #fff;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+          }
+
+          p {
+            color: #9ec80e;
+          }
+        }
+      }
+
+      .widget_news {
+        margin-top: -22px;
+
+        .single_news {
+          display: flex;
+
+          align-items: center;
+
+          // margin-bottom: 20px;
+          .news_thumb {
+            width: 20%;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          .news_link {
+            width: 80%;
+            margin-left: 20px;
+
+            h3 {
+              font-size: 17px;
+              line-height: 24px;
+              font-weight: 400;
+
+              a {
+                color: #fff;
+                text-decoration: none;
+
+                &:hover {
+                  color: #9ec80e;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .footer_social_widget {
+        ul {
+          margin: 0;
+          padding: 0;
+
+          &.social_widget {
+            li {
+              display: inline-block;
+              margin-right: 16px;
+              list-style: none;
+
+              a {
+                display: block;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+
+                color: #fff;
+                font-size: 16px;
+
+                &.facebook {
+                  background-color: #3c5998;
+                }
+
+                &.twitter {
+                  background-color: #29a9e0;
+                }
+
+                &.pinterest {
+                  background-color: #ff2323;
+                }
+
+                &.vimeo {
+                  background-color: #ff6c00;
+                }
+
+                &.behance {
+                  background-color: #059ae7;
+                }
+              }
+            }
+          }
+        }
+        
+      }
+      .widget_payment{
+        margin-top: 55px;
+        .widget_title{
+          margin-bottom: 40px;
+          h4{
+            color: #9ec80e;
+            font-size: 25px;
+          }
+        }
+        .payment_method{
+          a{
+            margin-right: 16px;
+            img{
+              width: 47px;
+              height: 31px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .chopcafe_copyright{
+    padding: 34px 0 35px;
+    .align-items-center{
+      align-items: center!important;
+      .copyright_text{
+        color: #fff;
+        font-size: 15px;
+      }
+      .float-right{
+        float: right;
+      }
+    }
+  }
+}
+
+// up
+#scroll_top {
+  position: fixed;
+  bottom: 20px;
+
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: #9ec80e;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  z-index: 337;
+  cursor: pointer;
+
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+@media (max-width: 767px) {
+
+  // 公共样式
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+
+    &.j-center {
+      justify-content: center !important;
+    }
+
+    .taste-title {
+      margin-bottom: 55px;
+
+      &.text-center {
+        text-align: center !important;
+
+        h2 {
+          font-size: 26px;
+          line-height: 36px;
+          font-weight: bold;
+          margin-bottom: 14px;
+
+          span {
+            color: #9ec80e;
+          }
+        }
+
+        .title-divider {
+          position: relative;
+          width: 300px;
+          margin: 0 auto;
+
+          &::before {
+            position: absolute;
+            content: "";
+            top: 15px;
+            left: 0;
+            width: 135px;
+            height: 2px;
+            background-color: #9ec80e;
+          }
+
+          &::after {
+            position: absolute;
+            content: "";
+            top: 15px;
+            right: 0;
+            width: 135px;
+            height: 2px;
+            background-color: #9ec80e;
+          }
+
+          i {
+            color: #9ec80e;
+            position: relative;
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+
+  header .navbar-default {
+    .navbar-nav {
+      .open {
+        .dropdown-menu {
+          text-align: left;
+
+          li {
+            a {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //   轮播图
+
+  .silder {
+    padding-top: 50px;
+    margin-bottom: 80px;
+
+    .carousel {
+      .carousel-inner {
+        text-align: center;
+
+        .item {
+          .row {
+            .welcom-content {
+              margin-top: 10%;
+
+              h1 {
+                font-size: 32px;
+                line-height: 42px;
+
+                margin-bottom: 25px;
+
+                span {
+                  color: #9ec80e;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .left {
+        left: 0;
+      }
+
+      .right {
+        right: 0;
+      }
+
+      .carousel-control {
+        .glyphicon-chevron-left {
+          background-color: white;
+          color: white;
+          display: none;
+        }
+
+        .glyphicon-chevron-right {
+          background-color: white;
+          color: white;
+          display: none;
+        }
+      }
+    }
+
+    img {
+      margin-top: 40px;
+      width: 80%;
+    }
+  }
+
+  // about
+  .about {
+    padding: 80px 0;
+    background-color: #f6f7f8;
+
+    .about-box {
+      text-align: left;
+      // padding: 30px;
+      margin-bottom: 40px;
+
+      .about-text {
+        h2 {
+          font-size: 32px;
+          line-height: 42px;
+        }
+      }
+    }
+  }
+
+  // taste
+  .taste {
+    margin-bottom: -102px;
+
+    .taste-filter {
+      margin-bottom: 60px;
+
+      &.text-center {
+        text-align: center !important;
+      }
+
+      .taste-btn {
+        padding: 12px 10px;
+        font-size: 14px;
+        margin-left: 4px;
+        margin-right: 4px;
+        margin-bottom: 15px;
+
+        &.active-btn {
+          border-color: #9ec80e;
+          color: #fff;
+          background-color: #9ec80e;
+        }
+
+        &:hover {
+          border-color: #9ec80e;
+          color: #fff;
+          background-color: #9ec80e;
+          transition: all 0.5s;
+          transform: skewX(-10deg);
+        }
+
+        &:focus {
+          border-color: #9ec80e;
+          color: #fff;
+        }
+      }
+    }
+
+    .grid {
+      // height: 3130.5px;
+
+      .grid-item {
+        margin-bottom: 60px;
+        transition: all 0.5s ease-out;
+
+        &:hover {
+          .grid-inner-item {
+            .grid-img {
+              .overlay-content {
+                display: block;
+
+                .btn-zoom {
+                  &:hover {
+                    background-color: #9ec80e;
+                  }
+                }
+
+                .btn-link {
+                  &:hover {
+                    background-color: #9ec80e;
+                  }
+                }
+              }
+
+              .overlay-img {
+                display: block;
+              }
+            }
+          }
+        }
+
+        &.food_grid_box {
+          &:hover {
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 5px 30px 0px rgba(55, 55, 55, 0.26);
+
+            .grid-inner-item {
+              .grid-info {
+                border-color: #fff;
+              }
+            }
+          }
+        }
+
+        .grid-inner-item {
+          .grid-img {
+            position: relative;
+
+            .overlay-img {
+              top: 0;
+              left: 0;
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0, 0, 0, 0.7);
+              display: none;
+              // visibility: hidden;
+              transition: all 0.5s;
+            }
+
+            .overlay-content {
+              top: 50%;
+              left: 50%;
+              position: absolute;
+              transform: translate(-50%, -50%);
+              transition: all 0.5s;
+              display: none;
+
+              .btn-a {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                font-size: 16px;
+                border: 1px solid #fff;
+                margin-left: 8px;
+                margin-right: 8px;
+                display: inline-block;
+                text-align: center;
+                color: #fff;
+              }
+            }
+          }
+
+          .grid-info {
+            border: 1px solid #e1e1e1;
+            border-top: none;
+            padding: 26px 30px 22px;
+            transition: all 0.5s;
+
+            h3 {
+              font-size: 18px;
+
+              a {
+                color: #010a19;
+                text-decoration: none;
+              }
+
+              span {
+                float: right;
+                color: #9ec80e;
+                font-size: 18px;
+                font-weight: bold;
+              }
+
+              &::after {
+                display: block;
+                content: "";
+                width: 60px;
+                height: 1px;
+                background-color: #9ec80e;
+                margin: 19px 0 13px;
+              }
+            }
+
+            p {
+              font-size: 15px;
+              color: #999;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // how
+  .how {
+    text-align: center;
+
+    //  margin-top: 600px;
+    .col-sm-12 {
+      width: 100%;
+    }
+
+    &.how_to {
+      .grid-item {
+        margin-bottom: 40px;
+        position: relative;
+        text-align: center;
+
+        .grid_inner_item {
+          &.item_line {
+            &::before {
+              display: none;
+            }
+          }
+
+          &.item_line1 {
+            &::before {
+              display: none;
+            }
+          }
+        }
+
+        .icon_box {
+          position: relative;
+          display: block;
+          width: 120px;
+          height: 120px;
+          line-height: 140px;
+          text-align: center;
+          background-color: #fff;
+          border-radius: 50%;
+          border: 1px solid #9ec80e;
+          margin: 0 auto;
+          transition: all 0.5s;
+
+          &:hover {
+            background-color: #9ec80e;
+
+            i {
+              color: white;
+            }
+          }
+
+          i {
+            font-size: 50px;
+            color: #9ec80e;
+          }
+        }
+
+        .grid_info {
+          h4 {
+            color: #010a19;
+            font-weight: bold;
+            margin-top: 45px;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  // Meet Our Expert Chefs
+  .meet_2 {
+    &.bg_img {
+      .box_over {
+        .carousel-inner {
+          height: 470px;
+
+          .item {
+            margin: auto;
+
+            .meet-img {
+              .overlay_content {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .col,
+  .col-1,
+  .col-10,
+  .col-11,
+  .col-12,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-auto,
+  .col-lg,
+  .col-lg-1,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-auto,
+  .col-md,
+  .col-md-1,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-auto,
+  .col-sm,
+  .col-sm-1,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-auto,
+  .col-xl,
+  .col-xl-1,
+  .col-xl-10,
+  .col-xl-11,
+  .col-xl-12,
+  .col-xl-2,
+  .col-xl-3,
+  .col-xl-4,
+  .col-xl-5,
+  .col-xl-6,
+  .col-xl-7,
+  .col-xl-8,
+  .col-xl-9,
+  .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  // Book A Reservation
+  .book {
+    position: relative;
+
+    &.book_1 {
+      .book-img {
+        display: none;
+      }
+    }
+  }
+
+  // Latest News & Articles
+  .latest {
+    position: relative;
+    padding: 108px 0 90px;
+
+    .grid-item {
+      position: relative;
+      margin-bottom: 30px;
+      transition: all .5s;
+
+      .grid-inner-item {
+        display: block;
+        width: 100%;
+
+        .grid-img {
+          width: 100%;
+
+        }
+
+        .grid-info {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+// footer
+.chopcafe_footer{
+  .container{
+    max-width: 540px;
+  }
+  .footer_widget{
+    .m-button{
+      margin-bottom: 20px;
+      .footer_widget_box{
+        .widget_news{
+          .single_news{
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+  .chopcafe_copyright{
+    text-align: center;
+    .align-items-center{
+      .copyright_text{
+        &.float-right{
+          float: none!important;
+        }
+      }
+      
+    }
+  }
+}
+}
